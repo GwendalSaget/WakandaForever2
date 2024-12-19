@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('wakanda.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+.money-display {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#welcomeScreen h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #9C27B0;
+}
+
+#welcomeScreen p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7a3a85;
+}
+
+.swipe-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #ccab05;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+#welcomeScreen p2{
+    color: #ccab05;
+}
+
+.swipe-up .arrow {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #ccab05;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+#containerScreen {
+    background: rgba(30, 30, 30, 0.40);
+    padding: 20px;
+    text-align: center;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    background: rgba(50, 0, 100, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.container .info {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+
+.container:hover {
+    height: 400px;
+}
+
+.container:hover .info {
+    opacity: 1;
+    height: auto;
+}
+
+
+.container .info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+.container h2 {
+    color: #FFD700;
+}
+
+.info.hidden {
+    display: none;
+}
+
+.info {
+    margin-top: 10px;
+    color: #E1BEE7;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ccc;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
