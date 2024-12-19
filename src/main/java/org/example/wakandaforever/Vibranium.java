@@ -1,3 +1,6 @@
 package org.example.wakandaforever;
 
-//TODO
+public class Vibranium{
+    long vibranium;
+    int extracteur;
+}

@@ -27,7 +27,7 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         Database.clearTable();
-        System.out.println("Hola Ruben y bienvenido en este simulacion de Wakanda !\nEl objectivo es muy sencillo, vas a empezar al nivel 1 y des llegar al nivel 3 !\nPor eso debes mejorar tu cantidad de Vibranium y de energia !\nAhora vamos ! Inicilizando el Wakanda...\nCreando la armadura de Black Panther...\nEntrenando las guerreras...\n");
+        System.out.println("Hola Ruben y bienvenido en este simulacion de Wakanda !\nEl objectivo es muy sencillo, vas a empezar al nivel 1 y debes llegar al nivel 3 !\nPor eso debes mejorar tu cantidad de Vibranium y de energia !\nAhora vamos ! Inicilizando el Wakanda...\nCreando la armadura de Black Panther...\nEntrenando las guerreras...\n");
         Wakanda wakanda = new WakandaService().InitWakanda();
         Scanner scanner = new Scanner(System.in);
         while (true) {
